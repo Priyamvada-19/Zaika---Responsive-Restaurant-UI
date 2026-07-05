@@ -1,59 +1,94 @@
 # ZAIKA – Responsive Restaurant Website
 
-A modern and responsive restaurant website designed to provide an engaging and seamless user experience. The project showcases a clean user interface, smooth navigation, and responsive design principles, making it accessible across desktops, tablets, and mobile devices.
+A modern and fully responsive restaurant website built to deliver an engaging and visually appealing user experience. The project showcases a clean interface, intuitive navigation, and a mobile-friendly design while demonstrating core front-end development concepts using HTML, CSS, and JavaScript.
 
-##  Features
+## Overview
 
-* Responsive design for all screen sizes
-* Interactive navigation bar
-* Modern landing page
-* Food menu section
-* About Us section
-* Services section
-* Customer testimonials
-* Contact section
-* Smooth scrolling and animations
-* Clean and intuitive user interface
+SavorBite is a static restaurant website designed to provide visitors with an interactive platform to explore the restaurant's menu, services, and contact information. The project emphasizes responsive layouts, modern UI design, and smooth user interactions to create a seamless browsing experience across all devices.
 
-## Tech Stack
+---
 
-* HTML
-* CSS
-* JavaScript
+## Features
 
-##  Project Structure
+- Responsive design for desktop, tablet, and mobile devices
+- Modern and attractive landing page
+- Interactive navigation menu
+- Food menu with categorized items
+- About Us section
+- Services section
+- Customer testimonials
+- Contact section
+- Smooth scrolling navigation
+- Clean animations and transitions
+- User-friendly interface
+
+---
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+
+---
+
+## Project Structure
 
 ```
-Restaurant-Website/
-│── index.html
-│── css/
-│── js/
-│── README.md
-
+SavorBite/
+│
+├── index.html
+│──style.css
+├── script.js
+└── README.md
 ```
 
-## Learning Outcomes
+## Getting Started
 
-This project helped me strengthen my understanding of:
+Clone the repository
 
-* Responsive Web Design
-* Semantic HTML
-* CSS Flexbox & Grid
-* JavaScript DOM Manipulation
-* UI/UX Design Principles
-* Cross-browser Compatibility
+```bash
+git clone https://github.com/yourusername/Zaika---Responsive-Restaurant-UI.git
+```
 
-## Future Improvements
+Navigate into the project directory
 
-* Online table reservation system
-* Dynamic menu using backend APIs
-* User authentication
-* Shopping cart functionality
-* Payment integration
-* Admin dashboard
+```bash
+cd zaika
+```
+
+Open `index.html` in your preferred web browser.
+
+---
+
+## What I Learned
+
+Building this project helped me strengthen my understanding of:
+
+- Responsive Web Design
+- Semantic HTML
+- CSS Flexbox & Grid
+- JavaScript DOM Manipulation
+- UI/UX Design Principles
+- Website Layout Design
+- Cross-Browser Compatibility
+
+---
+
+## Future Enhancements
+
+- Online Table Reservation
+- Food Ordering System
+- User Authentication
+- Backend Integration
+- Payment Gateway
+- Admin Dashboard
+- Dynamic Menu Management
+
+---
 
 ##  Author
 
 **Priyamvada Kumar**
 
-This is just a basic layout, will make it fully functional as a future enhancement.
+Will add a responsive backend as a future enhancement. 
