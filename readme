@@ -1,4 +1,4 @@
-# ZAIKA – Responsive Restaurant Website
+ ZAIKA – Responsive Restaurant Website
 
 A modern and fully responsive restaurant website built to deliver an engaging and visually appealing user experience. The project showcases a clean interface, intuitive navigation, and a mobile-friendly design while demonstrating core front-end development concepts using HTML, CSS, and JavaScript.
 
@@ -6,7 +6,7 @@ A modern and fully responsive restaurant website built to deliver an engaging an
 
 SavorBite is a static restaurant website designed to provide visitors with an interactive platform to explore the restaurant's menu, services, and contact information. The project emphasizes responsive layouts, modern UI design, and smooth user interactions to create a seamless browsing experience across all devices.
 
----
+```
 
 ## Features
 
@@ -22,7 +22,7 @@ SavorBite is a static restaurant website designed to provide visitors with an in
 - Clean animations and transitions
 - User-friendly interface
 
----
+```
 
 ## Technologies Used
 
@@ -30,7 +30,7 @@ SavorBite is a static restaurant website designed to provide visitors with an in
 - CSS3
 - JavaScript
 
----
+
 
 ## Project Structure
 
@@ -47,19 +47,19 @@ SavorBite/
 
 Clone the repository
 
-```bash
+```
+bash
 git clone https://github.com/yourusername/Zaika---Responsive-Restaurant-UI.git
 ```
 
 Navigate into the project directory
 
-```bash
+```
+bash
 cd zaika
 ```
 
 Open `index.html` in your preferred web browser.
-
----
 
 ## What I Learned
 
@@ -73,8 +73,8 @@ Building this project helped me strengthen my understanding of:
 - Website Layout Design
 - Cross-Browser Compatibility
 
----
 
+```
 ## Future Enhancements
 
 - Online Table Reservation
@@ -84,8 +84,8 @@ Building this project helped me strengthen my understanding of:
 - Payment Gateway
 - Admin Dashboard
 - Dynamic Menu Management
+```
 
----
 
 ##  Author
 
