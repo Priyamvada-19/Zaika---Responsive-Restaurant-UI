@@ -29,9 +29,10 @@ Restaurant-Website/
 │── css/
 │── js/
 │── README.md
+
 ```
 
-##  Learning Outcomes
+## Learning Outcomes
 
 This project helped me strengthen my understanding of:
 
@@ -42,7 +43,7 @@ This project helped me strengthen my understanding of:
 * UI/UX Design Principles
 * Cross-browser Compatibility
 
-##  Future Improvements
+## Future Improvements
 
 * Online table reservation system
 * Dynamic menu using backend APIs
