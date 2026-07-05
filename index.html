@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZAIKA - The Indian Dining</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="logo">ZAIKA</div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="navMenu">
+                <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                <li><a href="#about" onclick="closeMenu()">About</a></li>
+                <li><a href="#menu" onclick="closeMenu()">Menu</a></li>
+                <li><a href="#reservations" onclick="closeMenu()">Reserve</a></li>
+                <li><a href="#events" onclick="closeMenu()">Events</a></li>
+                <li class="search-container">
+                    <input type="text" class="search-box" id="searchInput" placeholder="Search menu..." onkeyup="searchMenu()">
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="floating-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div> 
+            <div class="particle"></div>
+            <div class="particle"></div>   
+        </div>
+        <div class="hero-content">
+            <h1><b>ZAIKA</b></h1>
+            <div class="divider"></div>
+            <p><i>Taste the tradition , savor the story</i></p>
+            <a href="#reservations" class="btn"><b>Reserve Your Moment</b></a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label"><u>Our Story</u></div>
+                <h2 class="section-title">Culinary Artistry</h2>
+                <p class="section-description">A sanctuary for those who appreciate the finer things in life</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>ZAIKA represents the pinnacle of modern fine dining, where innovation meets tradition in perfect harmony. Our philosophy is simple yet profound: create unforgettable culinary experiences that transcend mere sustenance.</p>
+                    <p>Led by award-winning Chef Unknown, our kitchen is a laboratory of flavor, where seasonal ingredients are transformed into works of art. Each dish tells a story, each presentation is a masterpiece, and every bite is a journey.</p>
+                    <p>Our intimate dining space, bathed in sophisticated ambiance, provides the perfect backdrop for celebrations, romantic evenings, or simply indulging in the extraordinary.</p>
+                </div>
+                <div class="about-image">✦</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Discover</div>
+                <h2 class="section-title">Our Menu</h2>
+                <p class="section-description">Exquisitely crafted dishes that celebrate flavor and presentation</p>
+            </div>
+            <div class="menu-categories">
+                <button class="category-btn active" onclick="filterMenu('all')">All</button>
+                <button class="category-btn" onclick="filterMenu('starters')">Starters</button>
+                <button class="category-btn" onclick="filterMenu('mains')">Mains</button>
+                <button class="category-btn" onclick="filterMenu('desserts')">Desserts</button>
+                <button class="category-btn" onclick="filterMenu('beverages')">Beverages</button>
+            </div>
+            <div id="menu-grid" class="menu-grid"></div>
+        </div>
+    </section>
+
+    <!-- Reservations Section -->
+    <section id="reservations">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Join Us</div>
+                <h2 class="section-title">Reserve Your Table</h2>
+                <p class="section-description">Secure your place at the table where memories are made</p>
+            </div>
+            <form class="reservation-form" id="reservationForm">
+                <div id="successMessage" class="success-message">
+                    Your reservation has been confirmed. We look forward to serving you.
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Party Size</label>
+                        <select id="guests" required>
+                            <option value="">Select...</option>
+                            <option value="1">1 Guest</option>
+                            <option value="2">2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests</option>
+                            <option value="5">5 Guests</option>
+                            <option value="6+">6+ Guests and more</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time</label>
+                        <input type="time" id="time" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="requests">Special Requests (Optional)</label>
+                    <textarea id="requests" rows="4" placeholder="Dietary requirements, allergies, special occasions..."></textarea>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Confirm Reservation</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Experience</div>
+                <h2 class="section-title">Upcoming Events</h2>
+                <p class="section-description">Exclusive culinary experiences and special occasions</p>
+            </div>
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-image">♪</div>
+
+                    <div class="event-content">
+                        <div class="event-date">Every Saturday | 8:00 PM - 11:00 PM</div>
+                        <h3>Classical & Dine</h3>
+                        <p>Immerse yourself in smooth jazz performed by acclaimed musicians while savoring our chef's special tasting menu. An evening of sophistication and soul.</p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-image">◈</div>
+                    <div class="event-content">
+                        <div class="event-date">First Friday | 7:00 PM - 10:00 PM</div>
+                        <h3>Wine Pairing Experience</h3>
+                        <p>Journey through exceptional vintages carefully selected by our sommelier, paired with complementary courses designed to elevate each pour.</p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-image">★</div>
+                    <div class="event-content">
+                        <div class="event-date">Monthly | By Appointment</div>
+                        <h3>Chef's Table</h3>
+                        <p>An intimate 10-course journey with Chef Alexandre. Watch as each dish is prepared exclusively for you, with insights into techniques and ingredients.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Location</h3>
+                <p>Marine Drive </p>
+                <p>Near Continental </p>
+                <p>Mumbai City, MC 10001</p>
+                <p>+1 (555) 987-6543</p>
+                <p>reservations@zaika.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hours</h3>
+                <p>Tuesday - Thursday</p>
+                <p>6:00 PM - 10:00 PM</p>
+                <p><br>Friday - Saturday</p>
+                <p>6:00 PM - 11:00 PM</p>
+                <p><br>Sunday - Monday: Closed</p>
+            </div>
+            <div class="footer-section">
+                <h3>Experience</h3>
+                <a href="#menu">View Menu</a>
+                <a href="#reservations">Make Reservation</a>
+                <a href="#events">Private Events</a>
+                <a href="#">Gift Certificates</a>
+                <a href="#">Press & Awards</a>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Newsletter and Magazines</a>
+                <a href="#">Career Opportunities</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ZAIKA. All Rights Reserved. | Mock Design : Priyamvada Kumar</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+   

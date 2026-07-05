@@ -1,0 +1,58 @@
+# ZAIKA – Responsive Restaurant Website
+
+A modern and responsive restaurant website designed to provide an engaging and seamless user experience. The project showcases a clean user interface, smooth navigation, and responsive design principles, making it accessible across desktops, tablets, and mobile devices.
+
+##  Features
+
+* Responsive design for all screen sizes
+* Interactive navigation bar
+* Modern landing page
+* Food menu section
+* About Us section
+* Services section
+* Customer testimonials
+* Contact section
+* Smooth scrolling and animations
+* Clean and intuitive user interface
+
+## Tech Stack
+
+* HTML
+* CSS
+* JavaScript
+
+##  Project Structure
+
+```
+Restaurant-Website/
+│── index.html
+│── css/
+│── js/
+│── README.md
+```
+
+##  Learning Outcomes
+
+This project helped me strengthen my understanding of:
+
+* Responsive Web Design
+* Semantic HTML
+* CSS Flexbox & Grid
+* JavaScript DOM Manipulation
+* UI/UX Design Principles
+* Cross-browser Compatibility
+
+##  Future Improvements
+
+* Online table reservation system
+* Dynamic menu using backend APIs
+* User authentication
+* Shopping cart functionality
+* Payment integration
+* Admin dashboard
+
+##  Author
+
+**Priyamvada Kumar**
+
+This is just a basic layout, will make it fully functional as a future enhancement.
